@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadowboosting - Professional Gaming Services</title>
+    <meta name="description" content="Professional gaming services, rank boosting, and coaching to take your skills to the next level. 24/7 support, secure boosting, expert players." />
+    <meta name="keywords" content="gaming, boosting, rank boost, coaching, esports, competitive gaming" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Shadowboosting - Professional Gaming Services" />
+    <meta property="og:description" content="Level up your gaming experience with professional boosting and coaching services" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gameboostpro.com" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shadowboosting - Professional Gaming Services" />
+    <meta name="twitter:description" content="Level up your gaming experience with professional boosting and coaching services" />
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Performance and Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#00D2FF" />
+    
+    <style>
+      /* Critical CSS for loading screen */
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: #0A0E27;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(0, 210, 255, 0.3);
+        border-top: 3px solid #00D2FF;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Fallback loading screen for users with JS disabled -->
+      <div class="loading-screen">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
